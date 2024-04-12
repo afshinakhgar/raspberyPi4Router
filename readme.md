@@ -138,3 +138,40 @@ config interface 'vpnclient'
 ```bash
   opkg install nano curl
 ```
+
+
+
+## Wireless In the End
+```bash
+
+config wifi-device 'radio0'
+        option type 'mac80211'
+        option path 'platform/soc/fe300000.mmcnr/mmc_host/mmc1/mmc1:0001/mmc1:0001:1'
+        option channel '7'
+        option htmode 'HT20'
+        option disabled '0'
+        option mode 'ap'
+        option hwmode '11g'
+        option short_gi_40 '0'
+        option cell_density '0'
+
+config wifi-iface 'default_radio0'
+        option device 'radio0'
+        option network 'lan'
+        option mode 'ap'
+        option ssid 'OpenWrt'
+        option encryption 'psk2
+        option key '1234'
+
+config wifi-device 'radio1'
+        option type 'mac80211'
+        option path 'scb/fd500000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0/usb1/1-1/1-1.3/1-1.3:1.0'
+        option channel '7'
+        option hwmode '11g'
+        option htmode 'HT20'
+        option disabled '0'
+        option mode 'sta'
+        option short_gi_40 '0'
+        option cell_density '0'
+
+```
