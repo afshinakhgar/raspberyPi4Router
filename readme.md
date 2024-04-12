@@ -119,8 +119,9 @@ config interface 'vpnclient'
 > - save and apply
 > ### go to the terminal 
 > #### install tools and drivers
-> 
-> 
+
+### Install Tools And Wifi driver (choose your own driver)
+
 ```bash
   reboot
   ssh root@192.168.1.2
