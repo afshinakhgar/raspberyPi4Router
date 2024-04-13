@@ -175,3 +175,17 @@ config wifi-device 'radio1'
         option cell_density '0'
 
 ```
+
+
+### Configing V2ray
+> https://docs.openwrt.melmac.net/simple-adblock/#requirements-for-dns-resolver
+
+```bash
+Download Luci-app-v2ray
+https://github.com/kuoruan/luci-app-v2ray/releases
+
+opkg install luci-app-v2ray_*.ipk
+
+opkg update; cd /tmp/ && opkg download dnsmasq-full; opkg install ipset libnettle8 libnetfilter-conntrack3;
+opkg remove dnsmasq; opkg install dnsmasq-full --cache /tmp/; rm -f /tmp/dnsmasq-full*.ipk;
+```
