@@ -160,7 +160,7 @@ config wifi-iface 'default_radio0'
         option network 'lan'
         option mode 'ap'
         option ssid 'OpenWrt'
-        option encryption 'psk2
+        option encryption 'psk2'
         option key '1234'
 
 config wifi-device 'radio1'
