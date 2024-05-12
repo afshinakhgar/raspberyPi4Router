@@ -133,7 +133,7 @@ config interface 'vpnclient'
   opkg install kmod-usb-core kmod-usb-uhci kmod-usb-ohci kmod-usb2 usbutils openvpn-openssl luci-app-openvpn
 ```
 ```bash
-  opkg install kernel kmod-mac80211 kmod-usb-core mt7601u-firmware opkg install mt7601u-firmware mt7601u kmod-mt7601u
+   opkg install kmod-rt2800-usb rt2800-usb-firmware
 ```
 ```bash
   opkg install nano curl
@@ -189,3 +189,14 @@ opkg install luci-app-v2ray_*.ipk
 opkg update; cd /tmp/ && opkg download dnsmasq-full; opkg install ipset libnettle8 libnetfilter-conntrack3;
 opkg remove dnsmasq; opkg install dnsmasq-full --cache /tmp/; rm -f /tmp/dnsmasq-full*.ipk;
 ```
+#OR
+### Configing V2raya
+```bash
+
+opkg update
+```
+```bash
+
+opkg install luci-app-v2raya v2ray-geoip v2ray-geosite
+```
+
