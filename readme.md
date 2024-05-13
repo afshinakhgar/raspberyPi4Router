@@ -212,3 +212,9 @@ opkg install openssh-sftp-server
 
 ```
 
+### geo IP V2raya RoutingA
+```script
+default: proxy
+ip(geoip:private, geoip:ir)->direct
+
+```
