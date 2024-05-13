@@ -200,3 +200,15 @@ opkg update
 opkg install luci-app-v2raya v2ray-geoip v2ray-geosite
 ```
 
+
+### ssh for scp if you need
+
+
+```bash
+
+opkg update
+opkg install openssh-sftp-server
+/etc/init.d/dropbear restart
+
+```
+
